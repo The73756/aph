@@ -1,0 +1,23 @@
+:root {
+  --font-family: "Manrope", sans-serif;
+  --content-width: 1760px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --colors-red: #e44c2c;
+  --neutral-white: #fff;
+  --neutral-black: #000;
+  --colors-orange-dark: #eb743a;
+  --neutral-grey-dark: #5b5e68;
+  --neutral-grey-middle: #a9aeb9;
+  --neutral-grey-light: #f6f6fb;
+
+  // fonts
+  --h1: 80px;
+  --h2: 60px;
+  --h3: 45px;
+  --t1: 28px;
+  --t2: 20px;
+  --t3: 18px;
+}
