@@ -1,0 +1,41 @@
+.positions {
+  margin-top: 120px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  &__list {
+    padding-bottom: 60px;
+    padding-left: 12px;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    padding-left: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 4px;
+      display: block;
+      border-radius: 2px;
+      width: 8px;
+      height: 8px;
+      background-color: var(--colors-orange-dark);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__text {
+    line-height: 1;
+  }
+}
