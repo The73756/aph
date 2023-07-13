@@ -72,7 +72,7 @@
 
   &__text {
     .link {
-      &:hover {
+      @include hover {
         color: var(--neutral-grey-dark);
       }
     }

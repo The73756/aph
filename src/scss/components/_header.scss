@@ -50,7 +50,7 @@
       transition: width var(--transition);
     }
 
-    &:hover {
+    @include hover {
       &::after {
         width: 100%;
       }

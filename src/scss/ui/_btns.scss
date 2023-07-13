@@ -8,14 +8,14 @@
     border: 1px solid var(--neutral-white);
     border-radius: 20px;
 
-    &:hover {
-      color: var(--neutral-black);
-      background-color: var(--neutral-white);
-    }
-
     &:active {
       color: var(--neutral-black);
       background-color: #f2f2f2;
+    }
+
+    @include hover {
+      color: var(--neutral-black);
+      background-color: var(--neutral-white);
     }
 
     @extend .text--t2;
@@ -27,14 +27,14 @@
     color: var(--colors-orange-dark);
     background-color: var(--neutral-grey-light, #f6f6fb);
 
-    &:hover {
-      color: var(--neutral-white);
-      background-color: var(--neutral-grey-dark);
-    }
-
     &:active {
       color: var(--neutral-white);
       background-color: #71747e;
+    }
+
+    @include hover {
+      color: var(--neutral-white);
+      background-color: var(--neutral-grey-dark);
     }
 
     @extend .text--t2;
@@ -49,14 +49,14 @@
     text-align: center;
     color: var(--neutral-black);
 
-    &:hover {
-      color: var(--neutral-white);
-      background-color: var(--colors-orange-dark);
-    }
-
     &:active {
       color: var(--neutral-white);
       background-color: #f8864c;
+    }
+
+    @include hover {
+      color: var(--neutral-white);
+      background-color: var(--colors-orange-dark);
     }
 
     @extend .text--t1;
@@ -70,14 +70,14 @@
     color: var(--neutral-black);
     background: var(--neutral-white);
 
-    &:hover {
-      color: var(--neutral-white);
-      background-color: var(--neutral-grey-dark);
-    }
-
     &:active {
       color: var(--neutral-white);
       background: #71747e;
+    }
+
+    @include hover {
+      color: var(--neutral-white);
+      background-color: var(--neutral-grey-dark);
     }
 
     @extend .text--t1;

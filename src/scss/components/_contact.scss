@@ -27,7 +27,7 @@
   &__link {
     color: var(--colors-red);
 
-    &:hover {
+    @include hover {
       color: #99220a;
     }
   }
@@ -39,7 +39,7 @@
   &__icon {
     transition: opacity var(--transition);
 
-    &:hover {
+    @include hover {
       opacity: 0.8;
     }
   }

@@ -92,7 +92,7 @@
       background-color: currentcolor;
     }
 
-    &:hover {
+    @include hover {
       color: var(--neutral-grey-hover);
     }
   }
@@ -104,7 +104,7 @@
     color: var(--neutral-white);
     background-color: rgb(91 94 104 / 20%);
 
-    &:hover {
+    @include hover {
       color: var(--neutral-black);
       background-color: var(--neutral-white);
     }
