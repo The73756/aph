@@ -71,20 +71,9 @@
   }
 
   &__text {
-    a {
-      position: relative;
-      display: inline-block;
-      color: currentcolor;
-
-      &::before {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 4px;
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: currentcolor;
+    .link {
+      &:hover {
+        color: var(--neutral-grey-dark);
       }
     }
   }
