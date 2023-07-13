@@ -108,6 +108,11 @@
       color: var(--neutral-black);
       background-color: var(--neutral-white);
     }
+
+    @include active {
+      color: var(--neutral-black);
+      background-color: #f2f2f2;
+    }
   }
 }
 

@@ -5,3 +5,11 @@
     }
   }
 }
+
+@mixin active {
+  @media (any-hover: hover) {
+    &:active {
+      @content;
+    }
+  }
+}
