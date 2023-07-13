@@ -4,3 +4,4 @@ import "./_functions";
 import "./_components";
 
 import "./components/accordion";
+import "./components/smooth-scroll";
