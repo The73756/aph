@@ -1,0 +1,62 @@
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+
+  &--h1 {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 110%;
+    letter-spacing: 0.8px;
+    color: var(--neutral-white);
+  }
+
+  &--h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: 0.6px;
+    color: var(--neutral-grey-dark);
+  }
+
+  &--h3 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0.45px;
+    color: var(--neutral-grey-dark);
+  }
+
+  &--colored {
+    color: var(--colors-orange-dark);
+  }
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+
+  &--t1 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 140%;
+    letter-spacing: 0.28px;
+    color: #2f2f2f;
+  }
+
+  &--t2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+  }
+
+  &--t3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+  }
+}

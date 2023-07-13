@@ -1,0 +1,28 @@
+.hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--colors-orange-dark);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 99px;
+  }
+
+  &__subtitle {
+    color: var(--neutral-white);
+  }
+
+  &__text {
+    margin-top: 45px;
+    color: var(--neutral-white);
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 50px;
+    width: 100%;
+  }
+}
