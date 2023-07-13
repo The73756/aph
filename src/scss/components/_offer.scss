@@ -1,0 +1,39 @@
+.offer {
+  &__container {
+    background: var(--neutral-grey-light);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 2px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--colors-orange-dark);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__text {
+    line-height: 1;
+  }
+
+  &__btn {
+    background-color: var(--neutral-white);
+  }
+}
