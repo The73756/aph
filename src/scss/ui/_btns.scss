@@ -12,6 +12,32 @@
       color: var(--neutral-black);
       background-color: var(--neutral-white);
     }
+
+    &:active {
+      background: #f2f2f2;
+    }
+  }
+
+  &--outline-big {
+    display: inline-block;
+    border: 2px solid var(--colors-orange-dark, #eb743a);
+    border-radius: 25px;
+    padding: 30px 90px;
+    max-width: 640px;
+    line-height: 1;
+    text-align: center;
+    color: var(--neutral-black);
+
+    &:hover {
+      color: var(--neutral-white);
+      background-color: var(--colors-orange-dark);
+    }
+
+    &:active {
+      background-color: #f8864c;
+    }
+
+    @extend .text--t1;
   }
 
   &--filled-small {
@@ -23,6 +49,10 @@
     &:hover {
       color: var(--neutral-white);
       background-color: var(--neutral-grey-dark);
+    }
+
+    &:active {
+      background-color: #71747e;
     }
   }
 
