@@ -1,0 +1,17 @@
+.about {
+  &__container {
+    background-color: var(--neutral-white);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 1070px;
+    gap: 40px;
+  }
+}
