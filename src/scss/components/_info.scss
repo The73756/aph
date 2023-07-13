@@ -1,0 +1,30 @@
+.info {
+  margin-top: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colors-orange-dark);
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__img {
+    border-radius: 25px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 50px;
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--neutral-white);
+  }
+}
