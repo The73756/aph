@@ -3,6 +3,10 @@
   padding: 0;
   font-family: "Manrope", sans-serif;
 
+  &__colored {
+    color: var(--colors-orange-dark);
+  }
+
   &--h1 {
     font-weight: 800;
     font-size: 80px;
@@ -25,10 +29,6 @@
     line-height: 130%;
     letter-spacing: 0.45px;
     color: var(--neutral-grey-dark);
-  }
-
-  &--colored {
-    color: var(--colors-orange-dark);
   }
 }
 
