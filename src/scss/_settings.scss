@@ -102,6 +102,21 @@ a {
   position: relative;
 }
 
+.section-container {
+  border-radius: 50px;
+  padding: 70px 90px;
+}
+
 .img-shadow {
   box-shadow: 20px 20px 0 0 var(--neutral-white);
+}
+
+.site-container {
+  background-color: var(--colors-orange-dark);
+}
+
+.grey-light-container {
+  border-radius: 80px 80px 0 0;
+  padding-top: 90px;
+  background-color: var(--neutral-grey-light);
 }

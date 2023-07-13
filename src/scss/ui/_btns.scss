@@ -2,15 +2,27 @@
   padding: 18px 40px;
   line-height: 1;
   color: var(--neutral-white);
+  transition: color var(--transition), background-color var(--transition);
 
   &--outline {
     border: 1px solid var(--neutral-white);
     border-radius: 20px;
-    transition: color var(--transition), background-color var(--transition);
 
     &:hover {
       color: var(--neutral-black);
       background-color: var(--neutral-white);
+    }
+  }
+
+  &--filled-small {
+    border-radius: 16px;
+    text-transform: lowercase;
+    color: var(--colors-orange-dark);
+    background: var(--neutral-grey-light, #f6f6fb);
+
+    &:hover {
+      color: var(--neutral-white);
+      background-color: var(--neutral-grey-dark);
     }
   }
 
