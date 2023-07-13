@@ -1,0 +1,28 @@
+.work {
+  margin-top: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  &__img {
+    border-radius: 25px;
+  }
+
+  &__right {
+    max-width: 768px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
