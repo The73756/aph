@@ -1,24 +1,41 @@
 <header class="header">
-  <div class="container header__container">
-    <h2 class="header__title title">Агентство развития Новотроицка</h2>
-    <div class="header__right">
-      <nav class="header-nav" aria-label="Навигация по странице">
-        <ul class="header-nav__list list-reset">
-          <li class="header-nav__item">
-            <a href="#work" class="header-nav__link text text--t2">Работа в Агентстве</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#positions" class="header-nav__link text text--t2">Вакансии</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#steps" class="header-nav__link text text--t2">Этапы отбора</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#contacts" class="header-nav__link text text--t2">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-reset btn btn--outline">Откликнутся</button>
+  <div class="container">
+    <div class="header__container menu" data-menu>
+      <button
+        class="burger burger--active header__burger"
+        aria-label="Закрыть меню"
+        aria-expanded="false"
+        data-burger-close
+      >
+        <span class="burger__line"></span>
+      </button>
+      <h2 class="header__title title">Агентство развития Новотроицка</h2>
+      <div class="header__right">
+        <nav class="header-nav" aria-label="Навигация по странице">
+          <ul class="header-nav__list list-reset">
+            <li class="header-nav__item">
+              <a href="#work" class="header-nav__link text text--t2">Работа в Агентстве</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#positions" class="header-nav__link text text--t2">Вакансии</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#steps" class="header-nav__link text text--t2">Этапы отбора</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contacts" class="header-nav__link text text--t2">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-reset btn btn--outline header__btn">Откликнутся</button>
+      </div>
     </div>
+
+    <div class="burger-wrapper">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div data-menu-overlay class="overlay"></div>
   </div>
 </header>

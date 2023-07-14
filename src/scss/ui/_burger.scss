@@ -1,0 +1,26 @@
+.burger {
+  @include burger;
+
+  display: none;
+
+  @include laptop {
+    --burger-width: 30px;
+    --burger-height: 25px;
+    --burger-line-height: 2px;
+
+    display: block;
+    margin-left: auto;
+    color: var(--neutral-white);
+    transition: color var(--transition);
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    &--active {
+      color: var(--colors-orange-dark);
+    }
+  }
+}
