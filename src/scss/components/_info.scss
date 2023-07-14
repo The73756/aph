@@ -26,15 +26,18 @@
     border-radius: 25px;
 
     @include desktop {
+      border-radius: 20px;
       width: 574px;
     }
 
     @include laptop {
+      border-radius: 16px;
       width: auto;
       height: 400px;
     }
 
     @include tablet {
+      border-radius: 12px;
       width: 100%;
       height: auto;
     }
