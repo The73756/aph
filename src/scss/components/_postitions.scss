@@ -50,9 +50,18 @@
       height: 8px;
       background-color: var(--colors-orange-dark);
 
+      @include desktop {
+        top: 9px;
+      }
+
+      @include laptop {
+        top: 8px;
+      }
+
       @include tablet {
         left: 0;
-        top: 6px;
+        top: 7px;
+        border-radius: 1px;
         width: 5px;
         height: 5px;
       }

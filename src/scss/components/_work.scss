@@ -4,7 +4,8 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 60px;
 
     @include laptop {
       flex-direction: column;

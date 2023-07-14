@@ -28,8 +28,9 @@
   &--filled-small {
     border-radius: 16px;
     text-transform: lowercase;
-    color: var(--colors-orange-dark);
+    color: var(--colors-red);
     background-color: var(--neutral-grey-light, #f6f6fb);
+    cursor: default;
 
     @include desktop {
       border-radius: 12px;

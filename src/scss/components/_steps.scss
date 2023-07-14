@@ -138,9 +138,9 @@
 
         @include tablet {
           left: -17px;
-          top: 17px;
+          top: 16px;
           width: 1px;
-          height: calc(100% + 17px);
+          height: calc(100% + 19px);
         }
       }
 
@@ -154,8 +154,20 @@
     }
   }
 
+  &__btn {
+    @include small-mobile {
+      width: fit-content;
+    }
+  }
+
   &__text {
     line-height: 150%;
+
+    &-wrap {
+      @include mobile {
+        display: block;
+      }
+    }
 
     .link {
       @include hover {

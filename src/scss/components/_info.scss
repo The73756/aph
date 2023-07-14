@@ -13,7 +13,11 @@
     }
 
     @include laptop {
-      gap: 20px;
+      gap: 36px;
+
+      &--reverse {
+        gap: 20px;
+      }
     }
 
     @include tablet {
@@ -33,13 +37,14 @@
     @include laptop {
       border-radius: 16px;
       width: auto;
-      height: 400px;
+      max-height: 400px;
     }
 
     @include tablet {
       border-radius: 12px;
       width: 100%;
       height: auto;
+      max-height: none;
     }
   }
 

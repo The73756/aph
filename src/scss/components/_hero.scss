@@ -12,6 +12,7 @@
 
     @include desktop {
       margin-top: 47px;
+      gap: 69px;
     }
 
     @include laptop {
@@ -24,6 +25,12 @@
     @include tablet {
       align-items: flex-start;
       gap: 35px;
+    }
+  }
+
+  &__title {
+    @include desktop {
+      max-width: 800px;
     }
   }
 
@@ -68,13 +75,17 @@
     }
   }
 
+  @include desktop {
+    padding-top: 0;
+  }
+
   @include laptop {
-    padding-top: 132px;
+    padding-top: 40px;
     padding-bottom: 50px;
   }
 
   @include tablet {
-    padding-top: 100px;
+    padding-top: 0;
     padding-bottom: 30px;
   }
 }
