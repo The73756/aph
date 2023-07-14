@@ -106,6 +106,7 @@
   @include laptop {
     display: flex;
     flex-direction: column;
+    border-radius: 16px;
     padding: 30px;
     width: auto;
     height: auto;
@@ -113,6 +114,7 @@
   }
 
   @include tablet {
+    border-radius: 12px;
     padding: 16px;
     gap: 10px;
   }
