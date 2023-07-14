@@ -1,9 +1,15 @@
 .directions {
+  margin-top: 85px;
+
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-top: 85px;
     background-color: var(--neutral-white);
+
+    @include laptop {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__left {
@@ -11,16 +17,50 @@
     flex-direction: column;
     max-width: 770px;
     gap: 30px;
+
+    @include desktop {
+      max-width: 550px;
+      gap: 25px;
+    }
+
+    @include tablet {
+      gap: 12px;
+    }
   }
 
   &__right {
     display: grid;
-    grid-gap: 40px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include desktop {
+      gap: 30px;
+    }
+
+    @include laptop {
+      gap: 30px;
+    }
+
+    @include laptop {
+      column-gap: 16px;
+      row-gap: 24px;
+    }
   }
 
   &__btn {
     margin-top: auto;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
+
+  @include laptop {
+    margin-top: 50px;
+  }
+
+  @include tablet {
+    margin-top: 30px;
   }
 }
 
@@ -39,5 +79,41 @@
 
   &__text {
     line-height: 110%;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+
+    @include laptop {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include laptop {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @include desktop {
+    border-radius: 20px;
+    padding: 40px;
+    width: 260px;
+    height: 255px;
+  }
+
+  @include laptop {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    gap: 20px;
+  }
+
+  @include tablet {
+    padding: 16px;
+    gap: 10px;
   }
 }

@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
 @mixin desktop {
-  @media (max-width: (1539px)) {
+  @media (max-width: (1800px)) {
     @content;
   }
 }

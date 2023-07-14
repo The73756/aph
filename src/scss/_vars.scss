@@ -1,7 +1,7 @@
 :root {
   --font-family: "Manrope", sans-serif;
   --content-width: 1760px;
-  --container-offset: 16px;
+  --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
@@ -17,4 +17,12 @@
   // other
 
   --transition: 0.2s ease-in-out;
+
+  @include desktop {
+    --content-width: 1280px;
+  }
+
+  @include laptop {
+    --content-width: 700px;
+  }
 }

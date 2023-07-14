@@ -13,6 +13,14 @@
       background-position: center center;
       background-size: 70%;
       background-repeat: no-repeat;
+
+      @include desktop {
+        background-position: 50% 55%;
+      }
+
+      @include tablet {
+        background-position: 60% 55%;
+      }
     }
   }
 
@@ -24,17 +32,55 @@
     height: 36px;
     background-color: var(--neutral-white);
     cursor: pointer;
+
+    @include desktop {
+      width: 28px;
+      height: 28px;
+    }
+
+    @include laptop {
+      border-radius: 8px;
+    }
+
+    @include tablet {
+      flex: 1 1 auto;
+      border-radius: 6px;
+      max-width: 24px;
+      max-height: 24px;
+    }
   }
 
   &__label {
     cursor: pointer;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.16px;
+    }
   }
 
   &--small {
     .checkbox__item {
+      display: block;
       border-radius: 6px;
       width: 24px;
       height: 24px;
+
+      @include tablet {
+        flex: 1 1 auto;
+        border-radius: 4px;
+        max-width: 16px;
+        max-height: 16px;
+      }
+    }
+
+    .checkbox__label {
+      @include tablet {
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 0.13px;
+      }
     }
 
     .checkbox__input:checked {
@@ -42,5 +88,17 @@
         background-size: 80%;
       }
     }
+
+    @include desktop {
+      gap: 12px;
+    }
+
+    @include tablet {
+      gap: 18px;
+    }
+  }
+
+  @include tablet {
+    gap: 10px;
   }
 }

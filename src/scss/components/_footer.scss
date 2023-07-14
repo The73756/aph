@@ -7,6 +7,38 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 90px;
+
+    @include desktop {
+      margin-bottom: 80px;
+    }
+
+    @include laptop {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 25px;
+    }
+
+    @include tablet {
+      gap: 18px;
+    }
+  }
+
+  &__partners {
+    display: flex;
+    gap: 45px;
+
+    @include desktop {
+      gap: 20px;
+    }
+
+    @include laptop {
+      gap: 30px;
+    }
+
+    @include tablet {
+      justify-content: space-between;
+      gap: 10px;
+    }
   }
 
   &__link {
@@ -14,10 +46,38 @@
 
     &::before {
       bottom: 2px;
+
+      @include desktop {
+        bottom: -2px;
+      }
     }
 
-    &:hover {
+    @include hover {
       color: var(--neutral-black);
     }
+  }
+
+  &__icon {
+    @include desktop {
+      width: auto;
+      height: 94px;
+    }
+
+    @include laptop {
+      height: 72px;
+    }
+
+    @include tablet {
+      height: 100%;
+      max-height: 72px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 110px;
+  }
+
+  @include laptop {
+    margin-top: 105px;
   }
 }

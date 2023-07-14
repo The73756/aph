@@ -1,6 +1,6 @@
 // базовые подключения
-@import "vars";
 @import "mixins";
+@import "vars";
 @import "fonts";
 @import "settings";
 
@@ -10,9 +10,11 @@
 @import "./ui/accordion";
 @import "./ui/checkbox";
 @import "./ui/link";
+@import "./ui/burger";
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/menu";
 @import "./components/hero";
 @import "./components/about";
 @import "./components/directions";

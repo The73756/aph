@@ -6,6 +6,16 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    @include tablet {
+      gap: 15px;
+    }
   }
 
   &__text {
@@ -13,5 +23,19 @@
     flex-direction: column;
     max-width: 1070px;
     gap: 40px;
+
+    @include desktop {
+      max-width: 769px;
+      gap: 20px;
+    }
+
+    @include laptop {
+      max-width: none;
+      gap: 15px;
+    }
+
+    @include tablet {
+      gap: 10px;
+    }
   }
 }

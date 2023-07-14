@@ -11,10 +11,33 @@
     &--reverse {
       flex-direction: row-reverse;
     }
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
   }
 
   &__img {
     border-radius: 25px;
+
+    @include desktop {
+      width: 574px;
+    }
+
+    @include laptop {
+      width: auto;
+      height: 400px;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__text {
@@ -22,10 +45,40 @@
     flex-direction: column;
     max-width: 650px;
     gap: 50px;
+
+    @include desktop {
+      max-width: 480px;
+      gap: 40px;
+    }
+
+    @include laptop {
+      max-width: 300px;
+      gap: 25px;
+    }
+
+    @include tablet {
+      padding-top: 30px;
+      gap: 20px;
+    }
   }
 
   &__title {
     text-align: center;
     color: var(--neutral-white);
+  }
+
+  @include desktop {
+    margin-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  @include laptop {
+    margin-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
+    padding-bottom: 30px;
   }
 }

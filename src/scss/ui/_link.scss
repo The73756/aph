@@ -15,7 +15,7 @@
     background-color: currentcolor;
   }
 
-  &:hover {
+  @include hover {
     color: var(--neutral-grey-hover);
   }
 }

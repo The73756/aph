@@ -2,15 +2,36 @@
   margin-top: 120px;
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 40px;
+
+    @include laptop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    @include laptop {
+      margin-bottom: 5px;
+    }
   }
 
   &__list {
     padding-bottom: 60px;
     padding-left: 12px;
     width: 100%;
+
+    @include desktop {
+      padding-bottom: 50px;
+    }
+
+    @include laptop {
+      padding-bottom: 30px;
+    }
+
+    @include tablet {
+      padding-left: 0;
+    }
   }
 
   &__item {
@@ -21,21 +42,63 @@
     &::before {
       content: "";
       position: absolute;
-      left: -12px;
-      top: 4px;
+      left: -8px;
+      top: 10px;
       display: block;
       border-radius: 2px;
       width: 8px;
       height: 8px;
       background-color: var(--colors-orange-dark);
+
+      @include tablet {
+        left: 0;
+        top: 6px;
+        width: 5px;
+        height: 5px;
+      }
     }
 
     &:not(:last-child) {
-      margin-bottom: 26px;
+      margin-bottom: 20px;
+    }
+
+    @include laptop {
+      padding-left: 13px;
     }
   }
 
   &__text {
-    line-height: 1;
+    line-height: 150%;
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include desktop {
+      gap: 30px;
+    }
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include laptop {
+      gap: 16px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 90px;
+  }
+
+  @include laptop {
+    margin-top: 70px;
+  }
+
+  @include laptop {
+    margin-top: 60px;
   }
 }

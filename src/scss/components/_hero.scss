@@ -9,6 +9,22 @@
     justify-content: space-between;
     margin-bottom: 60px;
     gap: 99px;
+
+    @include desktop {
+      margin-top: 47px;
+    }
+
+    @include laptop {
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+
+    @include tablet {
+      align-items: flex-start;
+      gap: 35px;
+    }
   }
 
   &__subtitle {
@@ -18,11 +34,47 @@
   &__text {
     margin-top: 45px;
     color: var(--neutral-white);
+
+    @include desktop {
+      margin-top: 27px;
+    }
+
+    @include laptop {
+      margin-top: 15px;
+    }
+
+    @include tablet {
+      margin-top: 12px;
+    }
   }
 
   &__img {
     position: relative;
     border-radius: 50px;
     width: 100%;
+
+    @include desktop {
+      border-radius: 35px;
+    }
+
+    @include laptop {
+      border-radius: 30px;
+      height: 488px;
+    }
+
+    @include tablet {
+      margin-top: -10px;
+      border-radius: 16px;
+    }
+  }
+
+  @include laptop {
+    padding-top: 132px;
+    padding-bottom: 50px;
+  }
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 30px;
   }
 }

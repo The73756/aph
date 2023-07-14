@@ -9,12 +9,24 @@
   &__container-width {
     width: 100%;
     max-width: 940px;
+
+    @include desktop {
+      max-width: 640px;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
     text-align: center;
     color: var(--neutral-white);
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
 
   &__wrapper {
@@ -24,6 +36,20 @@
     margin-bottom: 30px;
     width: 100%;
     gap: 20px;
+
+    @include desktop {
+      margin-bottom: 24px;
+      gap: 24px;
+    }
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
+      gap: 12px;
+    }
   }
 
   &__label {
@@ -35,6 +61,22 @@
     width: 100%;
     background-color: var(--neutral-white);
     gap: 3px;
+
+    @include desktop {
+      border-radius: 20px;
+      padding: 10px 0 8px;
+      gap: 0;
+    }
+
+    @include laptop {
+      border-radius: 16px;
+      padding: 8px 0;
+    }
+
+    @include tablet {
+      border-radius: 12px;
+      padding: 8px 0 16px;
+    }
   }
 
   &__label-text {
@@ -44,6 +86,15 @@
     line-height: normal;
     letter-spacing: 0.18px;
     color: var(--neutral-grey-dark, #5b5e68);
+
+    @include desktop {
+      line-height: 140%;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      letter-spacing: 0.13px;
+    }
   }
 
   &__input {
@@ -71,10 +122,24 @@
 
   &__privacy {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     color: var(--neutral-white);
     gap: 32px;
+
+    @include desktop {
+      gap: 15px;
+    }
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__link {
@@ -92,7 +157,7 @@
       background-color: currentcolor;
     }
 
-    &:hover {
+    @include hover {
       color: var(--neutral-grey-hover);
     }
   }
@@ -104,9 +169,23 @@
     color: var(--neutral-white);
     background-color: rgb(91 94 104 / 20%);
 
-    &:hover {
+    @include hover {
       color: var(--neutral-black);
       background-color: var(--neutral-white);
+    }
+
+    @include active {
+      color: var(--neutral-black);
+      background-color: #f2f2f2;
+    }
+
+    @include laptop {
+      font-size: 19px;
+      letter-spacing: 0.19px;
+    }
+
+    @include tablet {
+      margin-bottom: 18px;
     }
   }
 }
@@ -118,6 +197,14 @@
     margin-bottom: 20px;
     text-align: center;
     color: var(--neutral-white);
+
+    @include desktop {
+      margin-bottom: 18px;
+    }
+
+    @include tablet {
+      text-align: left;
+    }
   }
 
   &__wrapper {
@@ -127,5 +214,24 @@
     width: 100%;
     color: var(--neutral-white);
     gap: 115px;
+
+    @include desktop {
+      gap: 56px;
+    }
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      gap: 16px;
+    }
   }
 }

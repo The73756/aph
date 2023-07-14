@@ -8,6 +8,22 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
+
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 25px;
+    }
+
+    @include tablet {
+      margin-bottom: 16px;
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -22,10 +38,44 @@
       width: 10px;
       height: 10px;
       background-color: var(--colors-orange-dark);
+
+      @include laptop {
+        width: 8px;
+        height: 8px;
+      }
+
+      @include tablet {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 7px;
+        height: 7px;
+      }
     }
 
     &:not(:last-child) {
       margin-bottom: 26px;
+
+      @include desktop {
+        margin-bottom: 23px;
+      }
+
+      @include laptop {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include desktop {
+      gap: 15px;
+    }
+
+    @include laptop {
+      gap: 10px;
+    }
+
+    @include tablet {
+      position: relative;
+      padding-left: 17px;
     }
   }
 

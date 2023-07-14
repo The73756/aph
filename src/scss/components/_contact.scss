@@ -4,6 +4,11 @@
   &__container {
     display: flex;
     gap: 40px;
+
+    @include laptop {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__card {
@@ -20,27 +25,95 @@
 
       .contact__title {
         text-align: center;
+
+        @include laptop {
+          font-size: 19px;
+          line-height: 140%;
+          letter-spacing: 0.19px;
+          text-align: left;
+        }
       }
+
+      @include laptop {
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+      }
+
+      @include tablet {
+        justify-content: space-between;
+        gap: 10px;
+      }
+    }
+
+    @include desktop {
+      border-radius: 35px;
+      padding: 50px 70px;
+    }
+
+    @include laptop {
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    @include tablet {
+      border-radius: 16px;
+      padding: 30px 20px;
     }
   }
 
   &__link {
     color: var(--colors-red);
 
-    &:hover {
+    @include hover {
       color: #99220a;
     }
   }
 
   &__text {
     margin-top: 40px;
+
+    @include desktop {
+      margin-top: 30px;
+    }
+
+    @include laptop {
+      margin-top: 20px;
+    }
   }
 
   &__icon {
     transition: opacity var(--transition);
 
-    &:hover {
+    @include hover {
       opacity: 0.8;
     }
+
+    @include desktop {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include laptop {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include tablet {
+      min-width: 50px;
+      min-height: 50px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
+
+  @include laptop {
+    margin-top: 50px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
   }
 }
