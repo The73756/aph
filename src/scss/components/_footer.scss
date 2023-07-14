@@ -7,6 +7,19 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 90px;
+
+    @include desktop {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__partners {
+    display: flex;
+    gap: 45px;
+
+    @include desktop {
+      gap: 20px;
+    }
   }
 
   &__link {
@@ -14,10 +27,25 @@
 
     &::before {
       bottom: 2px;
+
+      @include desktop {
+        bottom: -2px;
+      }
     }
 
     @include hover {
       color: var(--neutral-black);
     }
+  }
+
+  &__icon {
+    @include desktop {
+      width: auto;
+      height: 94px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 110px;
   }
 }

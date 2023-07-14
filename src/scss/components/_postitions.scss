@@ -5,12 +5,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+
+    @include desktop {
+      row-gap: 30px;
+    }
   }
 
   &__list {
     padding-bottom: 60px;
     padding-left: 12px;
     width: 100%;
+
+    @include desktop {
+      padding-bottom: 50px;
+    }
   }
 
   &__item {
@@ -22,7 +30,7 @@
       content: "";
       position: absolute;
       left: -12px;
-      top: 4px;
+      top: 10px;
       display: block;
       border-radius: 2px;
       width: 8px;
@@ -31,11 +39,15 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 26px;
+      margin-bottom: 30px;
     }
   }
 
   &__text {
-    line-height: 1;
+    line-height: 150%;
+  }
+
+  @include desktop {
+    margin-top: 90px;
   }
 }

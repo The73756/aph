@@ -10,6 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
+
+  @include desktop {
+    margin-top: 90px;
+  }
 }
 
 .qualities-card {
@@ -23,4 +27,16 @@
   box-shadow: 0 0 30px 0 rgb(0 0 0 / 1%);
   background-color: var(--neutral-white);
   gap: 30px;
+
+  &__img {
+    @include desktop {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @include desktop {
+    padding: 40px 70px;
+    gap: 25px;
+  }
 }

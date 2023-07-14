@@ -18,19 +18,34 @@
   box-shadow: 0 0 30px 0 rgb(0 0 0 / 1%);
   background-color: var(--neutral-grey-light);
   cursor: pointer;
+
+  @include desktop {
+    padding: 30px 40px;
+  }
+
+  @include desktop {
+    border-radius: 20px;
+  }
 }
 
 .accordion__content {
   overflow: hidden;
   border-radius: 0 0 25px 25px;
-  padding-right: 70px;
-  padding-left: 70px;
+  padding: 0 70px;
   max-height: 0;
   box-sizing: content-box;
   background-color: var(--neutral-grey-light);
   opacity: 0;
   transition: max-height var(--accordion-time) ease-out, opacity var(--accordion-time) ease-out;
   will-change: max-height;
+
+  @include desktop {
+    padding: 0 30px;
+  }
+
+  @include desktop {
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .accordion__title {
@@ -55,6 +70,11 @@
     height: 36px;
     background-color: var(--colors-orange-dark);
     transform: translate(-50%, -50%);
+
+    @include desktop {
+      width: 3px;
+      height: 27px;
+    }
   }
 
   &::before {
@@ -70,6 +90,10 @@
 
 .is-open .accordion__control {
   border-radius: 25px 25px 0 0;
+
+  @include desktop {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .is-open .accordion__content {

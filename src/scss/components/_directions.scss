@@ -4,6 +4,10 @@
     justify-content: space-between;
     margin-top: 85px;
     background-color: var(--neutral-white);
+
+    @include desktop {
+      margin-top: 60px;
+    }
   }
 
   &__left {
@@ -11,12 +15,21 @@
     flex-direction: column;
     max-width: 770px;
     gap: 30px;
+
+    @include desktop {
+      max-width: 550px;
+      gap: 25px;
+    }
   }
 
   &__right {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(2, 1fr);
+
+    @include desktop {
+      grid-gap: 30px;
+    }
   }
 
   &__btn {
@@ -39,5 +52,17 @@
 
   &__text {
     line-height: 110%;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  @include desktop {
+    border-radius: 20px;
+    padding: 40px;
+    width: 260px;
+    height: 255px;
   }
 }

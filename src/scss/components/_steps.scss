@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    @include desktop {
+      gap: 40px;
+    }
   }
 
   &__section-container {
@@ -15,6 +19,10 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
+
+    @include desktop {
+      gap: 50px;
+    }
   }
 
   &__wrapper {
@@ -36,6 +44,10 @@
   &__list {
     padding-bottom: 60px;
     padding-left: 41px;
+
+    @include desktop {
+      padding-bottom: 50px;
+    }
   }
 
   &__item {
@@ -55,22 +67,32 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
 
       &::after {
         content: "";
         position: absolute;
         left: calc(-16px * 2);
-        top: 22px;
+        top: 24px;
         display: block;
         width: 2px;
-        height: calc(100% + 14px);
+        height: calc(100% + 20px);
         background-color: var(--colors-orange-dark);
+
+        @include desktop {
+          height: calc(100% + 16px);
+        }
+      }
+
+      @include desktop {
+        margin-bottom: 35px;
       }
     }
   }
 
   &__text {
+    line-height: 150%;
+
     .link {
       @include hover {
         color: var(--neutral-grey-dark);
@@ -79,16 +101,28 @@
   }
 
   &__moscow-time {
+    margin-left: 25px;
     color: var(--neutral-grey-middle);
     opacity: 0.5;
+
+    @include desktop {
+      margin-left: 15px;
+    }
   }
 
   &__desc {
-    margin-bottom: 10px;
     color: var(--neutral-black);
+
+    &-bottom {
+      margin-top: 10px;
+    }
   }
 
   &__desc-short {
     max-width: 920px;
+  }
+
+  @include desktop {
+    padding-bottom: 60px;
   }
 }

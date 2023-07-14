@@ -5,24 +5,44 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
   }
 
   &__img {
     border-radius: 25px;
+
+    @include desktop {
+      border-radius: 20px;
+      width: 600px;
+    }
   }
 
   &__right {
     max-width: 768px;
+
+    @include desktop {
+      max-width: 550px;
+    }
   }
 
   &__title {
     margin-bottom: 30px;
+
+    @include desktop {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include desktop {
+      gap: 20px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 90px;
   }
 }

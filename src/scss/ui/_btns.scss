@@ -18,6 +18,10 @@
       background-color: #f2f2f2;
     }
 
+    @include desktop {
+      padding: 12px 30px;
+    }
+
     @extend .text--t2;
   }
 
@@ -27,14 +31,9 @@
     color: var(--colors-orange-dark);
     background-color: var(--neutral-grey-light, #f6f6fb);
 
-    @include hover {
-      color: var(--neutral-white);
-      background-color: var(--neutral-grey-dark);
-    }
-
-    @include active {
-      color: var(--neutral-white);
-      background-color: #71747e;
+    @include desktop {
+      border-radius: 12px;
+      padding: 15px 30px;
     }
 
     @extend .text--t2;
@@ -59,6 +58,10 @@
       background-color: #f8864c;
     }
 
+    @include desktop {
+      padding: 25px 90px;
+    }
+
     @extend .text--t1;
   }
 
@@ -78,6 +81,10 @@
     @include active {
       color: var(--neutral-white);
       background: #71747e;
+    }
+
+    @include desktop {
+      padding: 25px 90px;
     }
 
     @extend .text--t1;

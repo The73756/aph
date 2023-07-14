@@ -21,6 +21,14 @@
       .contact__title {
         text-align: center;
       }
+
+      @include desktop {
+        margin-top: 20px;
+      }
+    }
+
+    @include desktop {
+      padding: 50px 70px;
     }
   }
 
@@ -34,6 +42,10 @@
 
   &__text {
     margin-top: 40px;
+
+    @include desktop {
+      margin-top: 30px;
+    }
   }
 
   &__icon {
@@ -42,5 +54,14 @@
     @include hover {
       opacity: 0.8;
     }
+
+    @include desktop {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 60px;
   }
 }

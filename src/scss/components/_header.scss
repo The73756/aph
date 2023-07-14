@@ -18,12 +18,21 @@
     line-height: normal;
     letter-spacing: 0.2px;
     color: var(--neutral-white);
+
+    @include desktop {
+      font-size: 17px;
+      letter-spacing: 0.17px;
+    }
   }
 
   &__right {
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @include desktop {
+      gap: 40px;
+    }
   }
 }
 

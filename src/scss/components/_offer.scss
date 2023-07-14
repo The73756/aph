@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
   }
 
   &__item {
@@ -26,6 +30,10 @@
 
     &:not(:last-child) {
       margin-bottom: 26px;
+
+      @include desktop {
+        margin-bottom: 23px;
+      }
     }
   }
 
