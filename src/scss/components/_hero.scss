@@ -13,6 +13,13 @@
     @include desktop {
       margin-top: 47px;
     }
+
+    @include laptop {
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
   }
 
   &__subtitle {
@@ -26,11 +33,24 @@
     @include desktop {
       margin-top: 27px;
     }
+
+    @include laptop {
+      margin-top: 15px;
+    }
   }
 
   &__img {
     position: relative;
     border-radius: 50px;
     width: 100%;
+
+    @include laptop {
+      height: 488px;
+    }
+  }
+
+  @include laptop {
+    padding-top: 132px;
+    padding-bottom: 50px;
   }
 }

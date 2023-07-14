@@ -36,6 +36,11 @@
       padding: 15px 30px;
     }
 
+    @include laptop {
+      border-radius: 12px;
+      padding: 13px 30px;
+    }
+
     @extend .text--t2;
   }
 
@@ -85,6 +90,13 @@
 
     @include desktop {
       padding: 25px 90px;
+    }
+
+    @include laptop {
+      border-radius: 16px;
+      padding: 25px 35px;
+      font-size: 15px;
+      letter-spacing: 0.15px;
     }
 
     @extend .text--t1;

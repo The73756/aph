@@ -37,6 +37,10 @@
       margin-bottom: 24px;
       gap: 24px;
     }
+
+    @include laptop {
+      gap: 20px;
+    }
   }
 
   &__label {
@@ -50,8 +54,14 @@
     gap: 3px;
 
     @include desktop {
+      border-radius: 20px;
       padding: 10px 0 8px;
       gap: 0;
+    }
+
+    @include laptop {
+      border-radius: 16px;
+      padding: 8px 0;
     }
   }
 
@@ -102,6 +112,10 @@
     @include desktop {
       gap: 15px;
     }
+
+    @include laptop {
+      gap: 20px;
+    }
   }
 
   &__link {
@@ -140,6 +154,11 @@
       color: var(--neutral-black);
       background-color: #f2f2f2;
     }
+
+    @include laptop {
+      font-size: 19px;
+      letter-spacing: 0.19px;
+    }
   }
 }
 
@@ -170,6 +189,10 @@
 
     @include desktop {
       margin-bottom: 30px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
     }
   }
 }

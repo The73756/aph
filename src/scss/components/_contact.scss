@@ -4,6 +4,11 @@
   &__container {
     display: flex;
     gap: 40px;
+
+    @include laptop {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__card {
@@ -20,15 +25,30 @@
 
       .contact__title {
         text-align: center;
+
+        @include laptop {
+          font-size: 19px;
+          line-height: 140%;
+          letter-spacing: 0.19px;
+          text-align: left;
+        }
       }
 
-      @include desktop {
-        margin-top: 20px;
+      @include laptop {
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
       }
     }
 
     @include desktop {
+      border-radius: 35px;
       padding: 50px 70px;
+    }
+
+    @include laptop {
+      border-radius: 30px;
+      padding: 40px;
     }
   }
 
@@ -46,6 +66,10 @@
     @include desktop {
       margin-top: 30px;
     }
+
+    @include laptop {
+      margin-top: 20px;
+    }
   }
 
   &__icon {
@@ -59,9 +83,18 @@
       width: 60px;
       height: 60px;
     }
+
+    @include laptop {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   @include desktop {
     margin-top: 60px;
+  }
+
+  @include laptop {
+    margin-top: 50px;
   }
 }

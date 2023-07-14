@@ -26,6 +26,10 @@
   @include desktop {
     border-radius: 20px;
   }
+
+  @include laptop {
+    border-radius: 16px;
+  }
 }
 
 .accordion__content {

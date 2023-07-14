@@ -11,6 +11,12 @@
     @include desktop {
       margin-bottom: 80px;
     }
+
+    @include laptop {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 25px;
+    }
   }
 
   &__partners {
@@ -19,6 +25,10 @@
 
     @include desktop {
       gap: 20px;
+    }
+
+    @include laptop {
+      gap: 30px;
     }
   }
 
@@ -43,9 +53,17 @@
       width: auto;
       height: 94px;
     }
+
+    @include laptop {
+      height: 72px;
+    }
   }
 
   @include desktop {
     margin-top: 110px;
+  }
+
+  @include laptop {
+    margin-top: 105px;
   }
 }

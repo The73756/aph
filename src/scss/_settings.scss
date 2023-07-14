@@ -108,7 +108,13 @@ a {
   padding: 70px 90px;
 
   @include desktop {
+    border-radius: 35px;
     padding: 50px 70px;
+  }
+
+  @include laptop {
+    border-radius: 30px;
+    padding: 40px;
   }
 }
 
@@ -130,7 +136,13 @@ a {
   background-color: var(--neutral-grey-light);
 
   @include desktop {
+    border-radius: 60px 60px 0 0;
     padding-top: 60px;
+  }
+
+  @include laptop {
+    border-radius: 45px 45px 0 0;
+    padding-top: 50px;
   }
 }
 
@@ -140,6 +152,12 @@ a {
   background-color: var(--neutral-white);
 
   @include desktop {
+    border-radius: 60px 60px 0 0;
     padding-top: 60px;
+  }
+
+  @include laptop {
+    border-radius: 45px 45px 0 0;
+    padding-top: 50px;
   }
 }

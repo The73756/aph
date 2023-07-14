@@ -8,6 +8,12 @@
     @include desktop {
       margin-top: 60px;
     }
+
+    @include laptop {
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 30px;
+    }
   }
 
   &__left {
@@ -24,11 +30,15 @@
 
   &__right {
     display: grid;
-    grid-gap: 40px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 
     @include desktop {
-      grid-gap: 30px;
+      gap: 30px;
+    }
+
+    @include laptop {
+      gap: 30px;
     }
   }
 
@@ -57,6 +67,11 @@
   &__icon {
     width: 70px;
     height: 70px;
+
+    @include laptop {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   @include desktop {
@@ -64,5 +79,14 @@
     padding: 40px;
     width: 260px;
     height: 255px;
+  }
+
+  @include laptop {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    gap: 20px;
   }
 }

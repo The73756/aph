@@ -11,6 +11,10 @@
     &--reverse {
       flex-direction: row-reverse;
     }
+
+    @include laptop {
+      gap: 20px;
+    }
   }
 
   &__img {
@@ -18,6 +22,11 @@
 
     @include desktop {
       width: 574px;
+    }
+
+    @include laptop {
+      width: auto;
+      height: 400px;
     }
   }
 
@@ -31,6 +40,11 @@
       max-width: 480px;
       gap: 40px;
     }
+
+    @include laptop {
+      max-width: 300px;
+      gap: 25px;
+    }
   }
 
   &__title {
@@ -41,5 +55,10 @@
   @include desktop {
     margin-top: 90px;
     padding-bottom: 60px;
+  }
+
+  @include laptop {
+    margin-top: 80px;
+    padding-bottom: 50px;
   }
 }

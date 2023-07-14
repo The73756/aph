@@ -12,12 +12,15 @@
       </div>
     </div>
 
-    <img
-      src="/img/hero.png"
-      class="hero__img img-shadow"
-      alt="Изображение в hero блоке"
-      width="1760"
-      height="467"
-    />
+    <picture>
+      <source srcset="/img/hero.png" media="(min-width: 1365px)" />
+      <img
+        src="/img/hero-small.png"
+        class="hero__img img-shadow"
+        alt="Изображение в hero блоке"
+        width="1760"
+        height="467"
+      />
+    </picture>
   </div>
 </section>
