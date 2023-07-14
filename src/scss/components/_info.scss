@@ -15,6 +15,11 @@
     @include laptop {
       gap: 20px;
     }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
   }
 
   &__img {
@@ -27,6 +32,11 @@
     @include laptop {
       width: auto;
       height: 400px;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -45,6 +55,11 @@
       max-width: 300px;
       gap: 25px;
     }
+
+    @include tablet {
+      padding-top: 30px;
+      gap: 20px;
+    }
   }
 
   &__title {
@@ -60,5 +75,10 @@
   @include laptop {
     margin-top: 80px;
     padding-bottom: 50px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
+    padding-bottom: 30px;
   }
 }

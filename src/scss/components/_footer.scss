@@ -17,6 +17,10 @@
       margin-bottom: 40px;
       gap: 25px;
     }
+
+    @include tablet {
+      gap: 18px;
+    }
   }
 
   &__partners {
@@ -29,6 +33,11 @@
 
     @include laptop {
       gap: 30px;
+    }
+
+    @include tablet {
+      justify-content: space-between;
+      gap: 10px;
     }
   }
 
@@ -56,6 +65,11 @@
 
     @include laptop {
       height: 72px;
+    }
+
+    @include tablet {
+      height: 100%;
+      max-height: 72px;
     }
   }
 

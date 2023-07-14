@@ -1,17 +1,13 @@
 .directions {
+  margin-top: 85px;
+
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-top: 85px;
     background-color: var(--neutral-white);
-
-    @include desktop {
-      margin-top: 60px;
-    }
 
     @include laptop {
       flex-direction: column;
-      margin-top: 50px;
       gap: 30px;
     }
   }
@@ -25,6 +21,10 @@
     @include desktop {
       max-width: 550px;
       gap: 25px;
+    }
+
+    @include tablet {
+      gap: 12px;
     }
   }
 
@@ -40,10 +40,27 @@
     @include laptop {
       gap: 30px;
     }
+
+    @include laptop {
+      column-gap: 16px;
+      row-gap: 24px;
+    }
   }
 
   &__btn {
     margin-top: auto;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
+
+  @include laptop {
+    margin-top: 50px;
+  }
+
+  @include tablet {
+    margin-top: 30px;
   }
 }
 
@@ -72,6 +89,11 @@
       width: 60px;
       height: 60px;
     }
+
+    @include laptop {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @include desktop {
@@ -88,5 +110,10 @@
     width: auto;
     height: auto;
     gap: 20px;
+  }
+
+  @include tablet {
+    padding: 16px;
+    gap: 10px;
   }
 }

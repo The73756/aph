@@ -12,6 +12,10 @@
       align-items: flex-start;
       gap: 20px;
     }
+
+    @include tablet {
+      gap: 15px;
+    }
   }
 
   &__text {
@@ -28,6 +32,10 @@
     @include laptop {
       max-width: none;
       gap: 15px;
+    }
+
+    @include tablet {
+      gap: 10px;
     }
   }
 }

@@ -13,6 +13,10 @@
     @include laptop {
       gap: 30px;
     }
+
+    @include tablet {
+      gap: 20px;
+    }
   }
 
   &__section-container {
@@ -27,6 +31,10 @@
     @include desktop {
       gap: 50px;
     }
+
+    @include tablet {
+      gap: 30px;
+    }
   }
 
   &__wrapper {
@@ -39,6 +47,23 @@
       flex-direction: column-reverse;
       align-items: flex-start;
       gap: 30px;
+    }
+
+    @include tablet {
+      margin-bottom: 16px;
+      gap: 16px;
+    }
+  }
+
+  &__accordion {
+    .accordion__title {
+      @include tablet {
+        text-align: left;
+      }
+
+      @include mobile {
+        max-width: 220px;
+      }
     }
   }
 
@@ -63,6 +88,11 @@
     @include desktop {
       padding-bottom: 50px;
     }
+
+    @include tablet {
+      padding-bottom: 30px;
+      padding-left: 23px;
+    }
   }
 
   &__item {
@@ -79,6 +109,14 @@
       width: 16px;
       height: 16px;
       background-color: transparent;
+
+      @include tablet {
+        left: -23px;
+        border-width: 1px;
+        border-radius: 3px;
+        width: 11px;
+        height: 11px;
+      }
     }
 
     &:not(:last-child) {
@@ -97,10 +135,21 @@
         @include desktop {
           height: calc(100% + 16px);
         }
+
+        @include tablet {
+          left: -17px;
+          top: 17px;
+          width: 1px;
+          height: calc(100% + 17px);
+        }
       }
 
       @include desktop {
         margin-bottom: 35px;
+      }
+
+      @include tablet {
+        margin-bottom: 30px;
       }
     }
   }
@@ -129,6 +178,13 @@
       margin-top: 6px;
       margin-left: 0;
     }
+
+    @include tablet {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%; /* 22.4px */
+      letter-spacing: 0.16px;
+    }
   }
 
   &__desc {
@@ -149,5 +205,9 @@
 
   @include laptop {
     padding-bottom: 40px;
+  }
+
+  @include laptop {
+    padding-bottom: 30px;
   }
 }

@@ -116,14 +116,28 @@ a {
     border-radius: 30px;
     padding: 40px;
   }
+
+  @include tablet {
+    border-radius: 16px;
+    padding: 30px 20px;
+  }
 }
 
 .img-shadow {
-  box-shadow: 20px 20px 0 0 var(--neutral-white);
+  box-shadow: 20px 20px 0 0 currentcolor;
+  color: var(--neutral-grey-light);
 
   @include desktop {
-    box-shadow: 16px 16px 0 0 var(--neutral-white);
+    box-shadow: 16px 16px 0 0 currentcolor;
   }
+
+  @include tablet {
+    box-shadow: 12px 12px 0 0 currentcolor;
+  }
+}
+
+.img-shadow--white {
+  color: var(--neutral-white);
 }
 
 .site-container {
@@ -144,6 +158,11 @@ a {
     border-radius: 45px 45px 0 0;
     padding-top: 50px;
   }
+
+  @include tablet {
+    border-radius: 25px 25px 0 0;
+    padding-top: 30px;
+  }
 }
 
 .white-container {
@@ -159,5 +178,10 @@ a {
   @include laptop {
     border-radius: 45px 45px 0 0;
     padding-top: 50px;
+  }
+
+  @include tablet {
+    border-radius: 25px 25px 0 0;
+    padding-top: 30px;
   }
 }

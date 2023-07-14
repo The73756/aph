@@ -24,6 +24,14 @@
     @include desktop {
       padding-bottom: 50px;
     }
+
+    @include laptop {
+      padding-bottom: 30px;
+    }
+
+    @include tablet {
+      padding-left: 0;
+    }
   }
 
   &__item {
@@ -34,17 +42,28 @@
     &::before {
       content: "";
       position: absolute;
-      left: -12px;
+      left: -8px;
       top: 10px;
       display: block;
       border-radius: 2px;
       width: 8px;
       height: 8px;
       background-color: var(--colors-orange-dark);
+
+      @include tablet {
+        left: 0;
+        top: 6px;
+        width: 5px;
+        height: 5px;
+      }
     }
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    @include laptop {
+      padding-left: 13px;
     }
   }
 
@@ -65,6 +84,10 @@
     @include laptop {
       gap: 20px;
     }
+
+    @include laptop {
+      gap: 16px;
+    }
   }
 
   @include desktop {
@@ -73,5 +96,9 @@
 
   @include laptop {
     margin-top: 70px;
+  }
+
+  @include laptop {
+    margin-top: 60px;
   }
 }

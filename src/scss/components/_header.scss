@@ -59,13 +59,18 @@
       padding: 16px 0;
       width: 100%;
       font-size: 19px;
-      background: var(--colors-orange-dark);
+      background-color: var(--colors-orange-dark);
+
+      @include hover {
+        color: var(--neutral-white);
+        background-color: var(--neutral-grey-dark);
+      }
     }
   }
 
   &__burger {
     position: absolute;
-    right: 34px;
+    right: 20px;
     top: 20px;
   }
 

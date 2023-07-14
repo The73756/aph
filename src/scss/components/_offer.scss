@@ -19,6 +19,11 @@
       margin-bottom: 20px;
       gap: 25px;
     }
+
+    @include tablet {
+      margin-bottom: 16px;
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -37,6 +42,14 @@
       @include laptop {
         width: 8px;
         height: 8px;
+      }
+
+      @include tablet {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 7px;
+        height: 7px;
       }
     }
 
@@ -58,6 +71,11 @@
 
     @include laptop {
       gap: 10px;
+    }
+
+    @include tablet {
+      position: relative;
+      padding-left: 17px;
     }
   }
 
