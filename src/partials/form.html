@@ -1,4 +1,4 @@
-<section class="form">
+<section class="form" id="form">
   <div class="container">
     <div class="form__container section-container">
       <div class="form__container-width">
@@ -44,7 +44,8 @@
         </div>
 
         <div class="form__footer">
-          <button type="submit" class="form__btn btn btn-reset btn--filled">
+          <!--    remove type="button" for form submit      -->
+          <button data-graph-path="form" type="button" class="form__btn btn btn-reset btn--filled">
             Отправить заявку
           </button>
           <div class="form__privacy">
@@ -59,6 +60,41 @@
             <a href="#" class="form__link text text--t3">Пользовательское соглашение</a>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal form-modal">
+    <div
+      class="graph-modal__container form-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="form"
+    >
+      <button
+        class="btn-reset graph-modal__close form-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.41408 1.58592C0.633036 2.36696 0.626457 3.63981 1.39939 4.42889L11.3812 14.6193L1.95864 24.0418C1.17759 24.8229 1.17102 26.0957 1.94395 26.8848C2.71688 27.6739 3.97663 27.6804 4.75768 26.8994L14.1803 17.4768L23.7917 27.289C24.5646 28.0781 25.8244 28.0846 26.6054 27.3036C27.3864 26.5225 27.393 25.2497 26.6201 24.4606L17.0087 14.6484L27.3851 4.27194C28.1661 3.4909 28.1727 2.21805 27.3998 1.42897C26.6269 0.639891 25.3671 0.63338 24.5861 1.41443L14.2096 11.7908L4.22782 1.60046C3.45488 0.811379 2.19513 0.804866 1.41408 1.58592Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <div class="graph-modal__content form-modal__content">
+        <h3 class="title title--h3 form-modal__title">Ваша заявка принята!</h3>
+        <p class="text text--t1 form-modal__text">
+          Пожалуйста, проверьте почту (в том числе папку «Спам»): вам отправлена дальнейшая
+          инструкция
+        </p>
       </div>
     </div>
   </div>

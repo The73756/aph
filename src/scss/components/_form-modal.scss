@@ -1,0 +1,102 @@
+.form-modal {
+  &__container {
+    border-radius: 50px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1160px;
+    max-height: 470px;
+
+    @include desktop {
+      border-radius: 35px;
+      max-width: 840px;
+      max-height: 430px;
+    }
+
+    @include laptop {
+      border-radius: 30px;
+      max-width: 700px;
+      max-height: 380px;
+    }
+
+    @include tablet {
+      border-radius: 16px;
+      padding: 140px 45px;
+      max-width: 95%;
+    }
+  }
+
+  &__close {
+    right: 50px;
+    top: 40px;
+    width: 36px;
+    height: 36px;
+    color: var(--colors-orange-dark);
+    background-image: none;
+    transition: color var(--transition);
+
+    svg {
+      fill: currentcolor;
+    }
+
+    @include hover {
+      color: var(--neutral-grey-dark);
+    }
+
+    @include desktop {
+      right: 60px;
+    }
+
+    @include laptop {
+      right: 40px;
+      top: 30px;
+    }
+
+    @include tablet {
+      right: 20px;
+      top: 20px;
+      width: 26px;
+      height: 26px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    gap: 30px;
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      gap: 15px;
+    }
+  }
+
+  &__title {
+    color: var(--colors-orange-dark);
+  }
+
+  &__text {
+    max-width: 860px;
+    color: var(--neutral-grey-dark);
+
+    @include desktop {
+      max-width: 660px;
+    }
+
+    @include laptop {
+      max-width: 510px;
+    }
+  }
+}
