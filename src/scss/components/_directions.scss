@@ -65,6 +65,7 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -79,6 +80,32 @@
 
   &__text {
     line-height: 110%;
+
+    &--hover {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      border-radius: inherit;
+      padding: 35px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 130%;
+      background-color: inherit;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition), visibility var(--transition);
+      inset: 0;
+
+      @include desktop {
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      @include laptop {
+        display: none;
+      }
+    }
   }
 
   &__icon {
@@ -95,6 +122,13 @@
     @include laptop {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  @include hover {
+    .card__text--hover {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
